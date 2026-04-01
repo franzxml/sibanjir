@@ -12,7 +12,7 @@ export default function HealthCheck() {
     setStatus("loading");
     setMessage("");
     try {
-      const res = await fetch("http://localhost:8000/api/v1/health");
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/health`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
       setStatus("ok");
