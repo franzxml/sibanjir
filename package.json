@@ -1,0 +1,15 @@
+{
+  "name": "sibanjir",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --names \"backend,frontend\" --prefix-colors \"blue,green\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd apps/backend && uvicorn app.main:app --reload --port 8000",
+    "dev:frontend": "cd apps/frontend && npm run dev",
+    "install:frontend": "cd apps/frontend && npm install",
+    "build": "cd apps/frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

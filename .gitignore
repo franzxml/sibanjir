@@ -1,0 +1,48 @@
+# ===== SENSITIVE / SECRETS =====
+.env
+.env.local
+.env.*.local
+.env.development
+.env.staging
+.env.production
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cer
+secrets/
+credentials/
+service-account*.json
+*-credentials.json
+
+# ===== PYTHON (backend) =====
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+.mypy_cache/
+.pytest_cache/
+*.log
+*.sqlite3
+*.db
+
+# ===== NODE / NEXT.JS (frontend) =====
+node_modules/
+.next/
+out/
+.cache/
+*.tsbuildinfo
+next-env.d.ts
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+desktop.ini
